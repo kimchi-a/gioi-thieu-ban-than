@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Giới thiệu bản thân</title>
+
+    <style>
+
+        body {
+            font-family: "Times New Roman";
+            font-size: 18px;
+        }
+
+        .khung {
+            width: 600px;
+            margin: auto;
+            border: 1px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: #d9f2d0;
+            padding: 10px;
+            margin: 0;
+        }
+
+        fieldset {
+            margin: 20px;
+        }
+
+        input {
+            font-size: 16px;
+        }
+
+        select {
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 450px;
+            height: 100px;
+            font-size: 16px;
+        }
+
+        .nut {
+            text-align: center;
+            background-color: #d9f2d0;
+            padding: 10px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<div class="khung">
+
+
+    <h2>
+        GIỚI THIỆU BẢN THÂN
+    </h2>
+
+
+    <form>
+
+
+
+        <fieldset>
+
+            <legend>
+                Thông Tin Cá Nhân
+            </legend>
+
+
+            Họ tên:
+
+            <input
+                type="text"
+                required
+            >
+
+            <br><br>
+
+
+            Email:
+
+            <input
+                type="email"
+                required
+            >
+
+            <br><br>
+
+
+            Số điện thoại:
+
+            <input
+                type="text"
+                required
+            >
+
+            <br><br>
+
+
+            Ngày sinh:
+
+            <input
+                type="date"
+                required
+            >
+
+            <br><br>
+
+
+            Địa chỉ:
+
+            <input
+                type="text"
+                required
+            >
+
+            <br><br>
+
+
+            Giới tính:
+
+            <input
+                type="radio"
+                name="gioitinh"
+                required
+            >
+            Nam
+
+            <input
+                type="radio"
+                name="gioitinh"
+            >
+            Nữ
+
+            <input
+                type="radio"
+                name="gioitinh"
+            >
+            Khác
+
+
+        </fieldset>
+
+
+
+
+        <fieldset>
+
+            <legend>
+                Thông Tin Giới Thiệu
+            </legend>
+
+
+            Nghề nghiệp:
+
+            <select required>
+
+                <option value="">
+                    -- Chọn --
+                </option>
+
+                <option>
+                    Sinh viên
+                </option>
+
+                <option>
+                    Học sinh
+                </option>
+
+                <option>
+                    Nhân viên
+                </option>
+
+                <option>
+                    Khác
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            Sở thích:
+
+            <br>
+
+            <input type="checkbox">
+            Nghe nhạc
+
+            <input type="checkbox">
+            Xem phim
+
+            <input type="checkbox">
+            Du lịch
+
+            <br>
+
+            <input type="checkbox">
+            Đọc sách
+
+            <input type="checkbox">
+            Chụp ảnh
+
+            <input type="checkbox">
+            Thể thao
+
+            <br><br>
+
+
+            Ngành học:
+
+            <select required>
+
+                <option value="">
+                    -- Chọn ngành --
+                </option>
+
+                <option>
+                    Công nghệ thông tin
+                </option>
+
+                <option>
+                    Kinh tế
+                </option>
+
+                <option>
+                    Ngoại ngữ
+                </option>
+
+                <option>
+                    Thiết kế
+                </option>
+
+                <option>
+                    Khác
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            Màu sắc yêu thích:
+
+            <input
+                type="text"
+                required
+            >
+
+            <br><br>
+
+
+            Giới thiệu bản thân:
+
+            <br><br>
+
+            <textarea
+                placeholder="Hãy viết vài dòng về bạn..."
+                required
+            ></textarea>
+
+
+        </fieldset>
+
+
+
+
+        <div class="nut">
+
+            <button type="submit">
+                Gửi thông tin
+            </button>
+
+            <button type="reset">
+                Nhập lại
+            </button>
+
+        </div>
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+
+</html>
