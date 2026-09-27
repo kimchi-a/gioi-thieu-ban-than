@@ -1,297 +1,222 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="vi">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Giới thiệu bản thân</title>
+    <title>CV Student - Trang chủ</title>
 
-    <style>
-
-        body {
-            font-family: "Times New Roman";
-            font-size: 18px;
-        }
-
-        .khung {
-            width: 600px;
-            margin: auto;
-            border: 1px solid black;
-        }
-
-        h2 {
-            text-align: center;
-            background-color: #d9f2d0;
-            padding: 10px;
-            margin: 0;
-        }
-
-        fieldset {
-            margin: 20px;
-        }
-
-        input {
-            font-size: 16px;
-        }
-
-        select {
-            font-size: 16px;
-        }
-
-        textarea {
-            width: 450px;
-            height: 100px;
-            font-size: 16px;
-        }
-
-        .nut {
-            text-align: center;
-            background-color: #d9f2d0;
-            padding: 10px;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <!-- HEADER -->
+    <header>
+        <div class="container header-content">
 
-<div class="khung">
+            <div class="logo">
+                <a href="index.html">CV STUDENT</a>
+            </div>
 
+            <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="mau.html">Mẫu CV</a>
+    <a href="taocv.html">Tạo CV</a>
+    <a href="vieclam.html">Việc làm</a>
+    <a href="camnang.html">Cẩm nang</a>
+    <a href="lienhe.html">Liên hệ</a>
+</nav>
 
-    <h2>
-        GIỚI THIỆU BẢN THÂN
-    </h2>
+        </div>
+    </header>
 
 
-    <form>
+    <!-- TRANG CHỦ -->
+    <section class="hero">
 
+        <div class="container hero-content">
 
+            <div class="hero-text">
 
-        <fieldset>
+                <h1>CV Student</h1>
 
-            <legend>
-                Thông Tin Cá Nhân
-            </legend>
+                <p>
+                    Đồng hành cùng sinh viên trên hành trình
+                    tạo CV và tìm việc.
+                </p>
 
+                <div class="hero-buttons">
 
-            Họ tên:
+                    <a href="mau.html" class="btn">
+                        Xem mẫu CV
+                    </a>
 
-            <input
-                type="text"
-                required
-            >
+                    <a href="taocv.html" class="btn">
+                        Tạo CV ngay
+                    </a>
 
-            <br><br>
+                </div>
 
-
-            Email:
-
-            <input
-                type="email"
-                required
-            >
-
-            <br><br>
-
-
-            Số điện thoại:
-
-            <input
-                type="text"
-                required
-            >
-
-            <br><br>
-
-
-            Ngày sinh:
-
-            <input
-                type="date"
-                required
-            >
-
-            <br><br>
-
-
-            Địa chỉ:
-
-            <input
-                type="text"
-                required
-            >
-
-            <br><br>
-
-
-            Giới tính:
-
-            <input
-                type="radio"
-                name="gioitinh"
-                required
-            >
-            Nam
-
-            <input
-                type="radio"
-                name="gioitinh"
-            >
-            Nữ
-
-            <input
-                type="radio"
-                name="gioitinh"
-            >
-            Khác
-
-
-        </fieldset>
-
-
-
-
-        <fieldset>
-
-            <legend>
-                Thông Tin Giới Thiệu
-            </legend>
-
-
-            Nghề nghiệp:
-
-            <select required>
-
-                <option value="">
-                    -- Chọn --
-                </option>
-
-                <option>
-                    Sinh viên
-                </option>
-
-                <option>
-                    Học sinh
-                </option>
-
-                <option>
-                    Nhân viên
-                </option>
-
-                <option>
-                    Khác
-                </option>
-
-            </select>
-
-            <br><br>
-
-
-            Sở thích:
-
-            <br>
-
-            <input type="checkbox">
-            Nghe nhạc
-
-            <input type="checkbox">
-            Xem phim
-
-            <input type="checkbox">
-            Du lịch
-
-            <br>
-
-            <input type="checkbox">
-            Đọc sách
-
-            <input type="checkbox">
-            Chụp ảnh
-
-            <input type="checkbox">
-            Thể thao
-
-            <br><br>
-
-
-            Ngành học:
-
-            <select required>
-
-                <option value="">
-                    -- Chọn ngành --
-                </option>
-
-                <option>
-                    Công nghệ thông tin
-                </option>
-
-                <option>
-                    Kinh tế
-                </option>
-
-                <option>
-                    Ngoại ngữ
-                </option>
-
-                <option>
-                    Thiết kế
-                </option>
-
-                <option>
-                    Khác
-                </option>
-
-            </select>
-
-            <br><br>
-
-
-            Màu sắc yêu thích:
-
-            <input
-                type="text"
-                required
-            >
-
-            <br><br>
-
-
-            Giới thiệu bản thân:
-
-            <br><br>
-
-            <textarea
-                placeholder="Hãy viết vài dòng về bạn..."
-                required
-            ></textarea>
-
-
-        </fieldset>
-
-
-
-
-        <div class="nut">
-
-            <button type="submit">
-                Gửi thông tin
-            </button>
-
-            <button type="reset">
-                Nhập lại
-            </button>
+            </div>
 
         </div>
 
+    </section>
 
-    </form>
+
+    <!-- GIỚI THIỆU -->
+    <section class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                CV Student có gì?
+            </h2>
+
+            <p class="section-description">
+                Những công cụ hỗ trợ sinh viên chuẩn bị CV và tìm việc.
+            </p>
 
 
-</div>
+            <div class="feature-list">
 
+                <!-- Mẫu CV -->
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📄
+                    </div>
+
+                    <h3>Mẫu CV</h3>
+
+                    <p>
+                        Nhiều mẫu CV đơn giản, hiện đại và phù hợp
+                        với sinh viên.
+                    </p>
+
+                    <a href="mau.html">
+                        Xem mẫu →
+                    </a>
+
+                </div>
+
+
+                <!-- Tạo CV -->
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ✏️
+                    </div>
+
+                    <h3>Tạo CV</h3>
+
+                    <p>
+                        Nhập thông tin cá nhân để chuẩn bị nội dung
+                        cho CV.
+                    </p>
+
+                    <a href="taocv.html">
+                        Tạo CV →
+                    </a>
+
+                </div>
+
+
+                <!-- Việc làm -->
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💼
+                    </div>
+
+                    <h3>Việc làm</h3>
+
+                    <p>
+                        Tham khảo một số vị trí việc làm phù hợp
+                        với sinh viên.
+                    </p>
+
+                    <a href="vieclam.html">
+                        Xem việc làm →
+                    </a>
+
+                </div>
+
+
+               
+
+
+                <!-- Cẩm nang -->
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📚
+                    </div>
+
+                    <h3>Cẩm nang</h3>
+
+                    <p>
+                        Những lưu ý cơ bản giúp CV rõ ràng và
+                        chuyên nghiệp hơn.
+                    </p>
+
+                    <a href="camnang.html">
+                        Xem cẩm nang →
+                    </a>
+
+                </div>
+
+
+                <!-- Liên hệ -->
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📞
+                    </div>
+
+                    <h3>Liên hệ</h3>
+
+                    <p>
+                        Gửi câu hỏi hoặc thông tin cần hỗ trợ
+                        cho CV Student.
+                    </p>
+
+                    <a href="lienhe.html">
+                        Liên hệ →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container">
+
+            <h3>CV STUDENT</h3>
+
+            <p>
+                Website hỗ trợ sinh viên tạo CV và tìm kiếm việc làm.
+            </p>
+
+            <p>
+                © 2026 CV Student - Website dành cho sinh viên
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
